@@ -1,0 +1,75 @@
+@import 'variables';
+.contenidos{
+    width: 100%;
+    height: 100vh;
+        .cuerpo{
+            background: $oscuro;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .wip{
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+                h1{
+                    font-family: $titulo;
+                    background: $claro;
+                    color: $oscuro;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                    width: auto;
+                    padding: .5rem;
+                    border-radius: 15px;
+                }
+                p{
+                    font-family: $cuerpo;
+                    width: 100%;
+                    color: $claro;
+                    font-size: 1.1rem;
+                }
+            }
+            img{
+                width: 35%;
+            }
+        }
+
+
+    .faccion{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: whitesmoke;
+        h1{
+            width: auto;
+            margin: .9rem;
+            padding: 1rem;
+            border-radius: 15px;
+            background: $oscuro;
+            color: $claro;
+            font-family: $titulo;
+        }
+        .nano{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .roto{
+                width: 250px;
+                height: 250px;
+                padding: 1.5rem;
+                background: chartreuse;
+                clip-path: circle(50% at 50% 50%);
+                margin: 1rem;
+            }
+        }
+    }
+}
