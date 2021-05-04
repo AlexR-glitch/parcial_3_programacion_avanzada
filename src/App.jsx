@@ -3,6 +3,7 @@ import Header from './components/header'
 import Contenido from './components/contenido'
 import Galeria from './components/galeria'
 import Formulario from './components/formulario'
+import Footer from './components/footer'
 
 export default function App() {
   return(
@@ -12,6 +13,7 @@ export default function App() {
       <Contenido />
       <Galeria />
       <Formulario />
+      <Footer />
     </section>
   );
 }

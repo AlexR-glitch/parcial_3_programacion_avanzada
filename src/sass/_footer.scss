@@ -1,0 +1,57 @@
+@import 'variables';
+
+footer{
+    width: 100%;
+    height: auto;
+    background: $oscuro;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $claro;
+        text-align: center;
+        width: 70%;
+        font-size: 1.5rem;
+        font-family: $titulo;
+        font-weight: lighter;
+    }
+    p{
+        color: $claro;
+        text-align: center;
+        width: 70%;
+        font-size: 1.2rem;
+        font-family: $cuerpo;
+        font-weight: lighter;
+    }
+}
+@media screen and(max-width:1024px){
+    footer{
+        padding: 1rem;
+        h1{
+            width: 80%;
+            font-size: 1.8rem;
+            font-weight: lighter;
+            margin-bottom: .5rem;
+        }
+        p{
+            width: 80%;
+            font-size: 1.5rem;
+            font-family: $cuerpo;
+            font-weight: normal;
+        }
+    }
+}
+@media screen and(max-width:411px){
+    footer{
+        h1{
+            width: 90%;
+            font-size: 1.1rem;
+        }
+        p{
+            width: 90%;
+            font-size: .9rem;
+        }
+    }
+}

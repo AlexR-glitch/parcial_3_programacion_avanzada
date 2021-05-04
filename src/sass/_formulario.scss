@@ -1,1 +1,204 @@
 @import 'variables';
+
+.zonaGeneral{
+    width: 100%;
+    height: auto;
+    background: $bg2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    h1{
+        font-family: $titulo;
+        background: $claro;
+        color: $oscuro;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        padding: .5rem 2rem .5rem 2rem;
+        width: auto;
+        border-radius: 15px;
+    }
+    .zonaF{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        form{
+            width: 40%;
+            height: auto;
+            background: $formasA;
+            border-radius: 25px;
+            padding: 2rem;
+            display: flex;
+            margin-bottom: 1rem;
+            flex-direction: column;
+            box-shadow:  9px 12px 25px  rgba(0, 0, 0, 0.658);
+            h2{
+                font-family: $cuerpo;
+                color: $claro;
+                font-size: 1.2rem;
+                margin-bottom: .8rem;
+                font-weight: lighter;
+            }
+            input{
+                height: 2rem;
+                border-radius: 10px;
+                margin-bottom: .5rem;
+                background: $clar0h;
+                border-style: none;
+                font-family: $cuerpo;
+                color: $detalles;
+                padding: .5rem;
+            }
+            .tipeo{
+                background: $clar0h;
+                color: $detalles;
+                border-radius: 10px;
+                padding: .5rem;
+                border-style: none;
+                margin-bottom: 1rem;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                height: auto;
+                input{
+                    color: $oscuro;
+                    background: $claro;
+                    font-family: $titulo;
+                    font-size: 1.8rem;
+                    padding: .5rem 2rem;
+                    margin-bottom: 0;
+                    margin-top: .5rem;
+                    height: auto;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .redes{
+            width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 1rem;
+            i{
+                font-size: 7rem;
+                margin: 1rem 1.5rem;
+                color: $claro;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    color: $claro;
+                    font-family: $cuerpo;
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1024px){
+    
+.zonaGeneral{
+    h1{
+        font-size: 2.5rem;
+    }
+    .zonaF{
+        flex-direction: column;
+        justify-content: center;
+        form{
+            width: 90%;
+            .tipeo{
+                font-size: 1rem;
+            }
+            .btn{
+                input{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .redes{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+            i{
+                font-size: 5rem;
+                margin: 1rem 1rem;
+            }
+            .text{
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:441px){
+    
+.zonaGeneral{
+    h1{
+        background: $claro;
+        font-size: 1.5rem;
+    }
+    .zonaF{
+        flex-direction: column;
+        justify-content: center;
+        form{
+            width: 100%;
+            h2{
+                font-size: 1rem;
+                margin-bottom: .4rem;
+            }
+            input{
+                height: 1.5rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                margin-bottom: .3rem;
+                padding: .5rem;
+            }
+            .tipeo{
+                margin-bottom: .4rem;
+                height: 8rem;
+            }
+            .btn{
+                input{
+                    font-size: 1.2rem;
+                    padding: .3rem 1.5rem;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .redes{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+            i{
+                font-size: 3.5rem;
+                margin: 1rem 1rem;
+                color: $claro;
+            }
+            .text{
+                h2{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+}
