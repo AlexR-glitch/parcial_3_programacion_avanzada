@@ -98,6 +98,52 @@
     }
 }
 
+.activo{
+    width: 80%;
+    max-width: 600px;
+    height: 100vh;
+    background: $oscuro;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    transition: ease-in-out .25s;
+    a{
+        font-size: 3rem;
+        text-decoration: none;
+        color:$claro;
+        padding: 1.5rem 2rem;
+        transition: ease-in-out .15s;
+        font-family: $titulo;
+        &:hover{
+            background: $claro;
+            color: $oscuro;
+        }
+    }
+    .salida{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+        width: 100%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: ease-in-out .15s;
+        background: $claro;
+        color: $oscuro;
+        font-family: $cuerpo;
+        &:hover{
+            background: rgb(0, 0, 0);
+            color: $claro;
+        }
+    }
+}
 .btnmenu{
     position: fixed;
     top: 50px;

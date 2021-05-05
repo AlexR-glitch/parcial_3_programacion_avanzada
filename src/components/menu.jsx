@@ -1,5 +1,14 @@
-    export default function Menu(){
-    return(
+//import {useState} from 'react'
+export default function Menu(){
+
+/*const[activo, setActivo]= useState(activo)*/
+
+/*Function mostrarMenu(e){
+    const jodido = e.target.value
+    console.log(value)
+}*/
+
+        return(
     <div className="barra">
         <div className="menu">
             <a href="#sinopsis"><i class="fas fa-radiation"></i> Sinopsis</a>
@@ -10,16 +19,24 @@
 
     <div class="degradado" id="degradado"></div>
 
-    <nav class="celular" id="celular">
-        <a href="#sinopsis" class="enlace">Sinopsis</a>
-        <a href="#faccion" class="enlace">Facciones</a>
-        <a href="#galeria" class="enlace">Galeria</a>
-        <a href="#final" class="enlace">Contacto</a>
-        <div class="salir" id="salida">salir</div>
+    <nav className='celular' id="celular" add>
+        
+        <a href="#sinopsis" className="enlace">Sinopsis</a>
+        <a href="#faccion" className="enlace">Facciones</a>
+        <a href="#galeria" className="enlace">Galeria</a>
+        <a href="#final" className="enlace">Contacto</a>
+        <div className="salir" id="salida">salir</div>
     </nav>
 
-    <div class="btnmenu" id="btnmenu"><i class="fas fa-radiation"></i></div>
+    <div className="btnmenu" /*onclick={mostrarMenu}*/><i class="fas fa-radiation"></i>
+    </div>
         </div>
-
     )
 }
+
+
+
+
+
+
+//className={`celular ${menu ? 'activo' : ' '}`}
