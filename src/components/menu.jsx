@@ -4,7 +4,7 @@ export default function Menu(){
 /*const[activo, setActivo]= useState(activo)*/
 
 /*Function mostrarMenu(e){
-    const jodido = e.target.value
+    const menu = e.target.value
     console.log(value)
 }*/
 
@@ -39,4 +39,4 @@ export default function Menu(){
 
 
 
-//className={`celular ${menu ? 'activo' : ' '}`}
+/*className={`celular ${menu ? 'activo' : ' '}`}*/
